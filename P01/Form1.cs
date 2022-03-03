@@ -17,11 +17,6 @@ namespace P01
             InitializeComponent();
         }
 
-        private void execute_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void execute_manual_Click(object sender, EventArgs e)
         {
             listBox1.Items.Clear();

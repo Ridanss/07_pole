@@ -4,9 +4,9 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace P01
+namespace P02
 {
-    static class Program
+    static class Program2
     {
         /// <summary>
         /// Hlavní vstupní bod aplikace.
@@ -16,7 +16,7 @@ namespace P01
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new Form2());
         }
     }
 }

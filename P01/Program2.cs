@@ -4,9 +4,9 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace P02
+namespace P01
 {
-    static class Program
+    static class Program2
     {
         /// <summary>
         /// Hlavní vstupní bod aplikace.
