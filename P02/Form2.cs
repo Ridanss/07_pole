@@ -30,8 +30,10 @@ namespace P02
                 listBox1.Items.Add(values[i]);
             }
             Array.Sort(values);
-            int nd_max = Array.IndexOf(values, values[values.Length - 1]) + 1;
-            int nd_min = Array.LastIndexOf(values, values[0]) - 1;
+            int nd_max = Array.IndexOf(values, values[values.Length - 1]) - 1;
+            int nd_min = Array.LastIndexOf(values, values[0]) + 1;
+            label_secmax.Text = ("2. největší: " + values[nd_max]);
+            label_secmin.Text = ("2. nejmenší: " + values[nd_min]);
             if (radio_sestupne.Checked)
             {
                 Array.Reverse(values);
