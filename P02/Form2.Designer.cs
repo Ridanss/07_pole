@@ -37,6 +37,8 @@
             this.listBox2 = new System.Windows.Forms.ListBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.label_secmin = new System.Windows.Forms.Label();
+            this.label_secmax = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // textBoxN
@@ -59,6 +61,7 @@
             // radio_sestupne
             // 
             this.radio_sestupne.AutoSize = true;
+            this.radio_sestupne.Checked = true;
             this.radio_sestupne.Location = new System.Drawing.Point(50, 99);
             this.radio_sestupne.Name = "radio_sestupne";
             this.radio_sestupne.Size = new System.Drawing.Size(68, 17);
@@ -74,7 +77,6 @@
             this.radio_vzestupne.Name = "radio_vzestupne";
             this.radio_vzestupne.Size = new System.Drawing.Size(74, 17);
             this.radio_vzestupne.TabIndex = 3;
-            this.radio_vzestupne.TabStop = true;
             this.radio_vzestupne.Text = "vzestupně";
             this.radio_vzestupne.UseVisualStyleBackColor = true;
             // 
@@ -122,11 +124,31 @@
             this.label3.TabIndex = 8;
             this.label3.Text = "pole 2";
             // 
+            // label_secmin
+            // 
+            this.label_secmin.AutoSize = true;
+            this.label_secmin.Location = new System.Drawing.Point(47, 154);
+            this.label_secmin.Name = "label_secmin";
+            this.label_secmin.Size = new System.Drawing.Size(62, 13);
+            this.label_secmin.TabIndex = 9;
+            this.label_secmin.Text = "2. nejmenší";
+            // 
+            // label_secmax
+            // 
+            this.label_secmax.AutoSize = true;
+            this.label_secmax.Location = new System.Drawing.Point(47, 177);
+            this.label_secmax.Name = "label_secmax";
+            this.label_secmax.Size = new System.Drawing.Size(57, 13);
+            this.label_secmax.TabIndex = 10;
+            this.label_secmax.Text = "2. největší";
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label_secmax);
+            this.Controls.Add(this.label_secmin);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.listBox2);
@@ -154,6 +176,8 @@
         private System.Windows.Forms.ListBox listBox2;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label_secmin;
+        private System.Windows.Forms.Label label_secmax;
     }
 }
 
