@@ -45,12 +45,15 @@ namespace P05
                     iMensi++;
                 }
             }
-            poleMensi= poleMensi.Except(int mimo=0
-            foreach(int value in poleVetsi)
+            int firstZero = Array.IndexOf(poleMensi, 0);
+            poleMensi = poleMensi.Take(firstZero).ToArray();
+            foreach(int value in poleMensi)
             {
                 listBox3.Items.Add(value);
             }
-            foreach(int value in poleMensi)
+            firstZero = Array.IndexOf(poleVetsi, 0);
+            poleVetsi = poleVetsi.Take(firstZero).ToArray();
+            foreach(int value in poleVetsi)
             {
                 listBox4.Items.Add(value);
             }
