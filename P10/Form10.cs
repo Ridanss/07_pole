@@ -31,7 +31,7 @@ namespace P10
             foreach (char znak in value)
             {
                 listBox1.Items.Add(znak);
-                for (int i = Array.IndexOf(value, znak) + 1; i < value.Length; i++)
+                for (int i = Array.IndexOf(value, znak) + 1; i < Array.LastIndexOf(value, znak); i++)
                 {
                     if (znak == value[i])
                     {
