@@ -19,13 +19,30 @@ namespace P10
 
         private void buttonExecute_Click(object sender, EventArgs e)
         {
+            listBox1.Items.Clear();
             string slovo = textBox1.Text;
             char[] value = new char[textBox1.Text.Length];
-            for (int i =0;i< textBox1.Text.Length - 1; i++)
+            int znakI = 0;
+            int znakX = 1, znakY = 1;
+            for (int i = 0; i < textBox1.Text.Length; i++)
             {
                 value[i] = slovo[i];
             }
-
+            foreach (char znak in value)
+            {
+                listBox1.Items.Add(znak);
+                for (int i = Array.IndexOf(value, znak) + 1; i < value.Length; i++)
+                {
+                    if (znak == value[i])
+                    {
+                        znakX++;
+                        if (znakX > znakY) znakI = i;
+                    }
+                }
+                if (znakY < znakX) znakY = znakX;
+                znakX = 1;
+            }
+            labelVysledek.Text = ("Nejčetnější znak:\nznak " + value[znakI] + " " + znakY + "x");
         }
     }
 }
